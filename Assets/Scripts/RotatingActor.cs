@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class RotatingActor : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    private float z;
+    
+    void Start () {
+        z = 0.5f;  //velocity
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+     
+    void Update () {
+        transform.Rotate(new Vector3(0,0,z)); //applying rotation
     }
 }
